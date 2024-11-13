@@ -32,6 +32,9 @@ app.use("/transaction", TransactionRouter)
 app.use("/admin", AdminRouter);
 
 
+app.get("/", (req, res) => {
+    res.send("chal gya")
+})
 
 mongoose.connect(`mongodb+srv://bhaktishiv73:yuCw0t5t4Rbhf0Wm@cluster0.dmoii.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`, {
     dbName: "ishop"
